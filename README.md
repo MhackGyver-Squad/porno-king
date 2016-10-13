@@ -1,6 +1,6 @@
 # Porno-King
 Port Knocking Sequence Discovery Scanner
-![alt text](https://github.com/mhackgyver-squad/porno-king/static/ron-jeremy-porno-king.jpg "Ron Jeremy The Porno king !")
+![alt text](https://github.com/mhackgyver-squad/porno-king/blob/master/static/ron-jeremy-porno-king.jpg?raw=true "Ron Jeremy The Porno king !")
 
 ## Installation
 ```shell
