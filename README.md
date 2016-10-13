@@ -3,9 +3,9 @@ Port Knocking Sequence Discovery Scanner
 
 ## Installation
 ```shell
-git clone https://github.com/mhackgyver-squad/porno-king
-cd porno-king
-python setup.py install
+$ git clone https://github.com/mhackgyver-squad/porno-king
+$ cd porno-king
+$ python setup.py install
 ```
 
 ## Usages
