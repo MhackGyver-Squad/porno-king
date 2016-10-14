@@ -1,0 +1,29 @@
+   ___                         __ ___          
+  / _ \___  _______  ___  ____/ //_(_)__  ___ _
+ / ___/ _ \/ __/ _ \/ _ \/___/ ,< / / _ \/ _ `/
+/_/   \___/_/ /_//_/\___/   /_/|_/_/_//_/\_, / 
+                                        /___/`
+------------------------------------------------------------------
+Maintainers: Mh@ckGyv3R
+Official Website: https://mhackgyver.github.io/porno-king
+Dedicated to Ron Jeremy (https://en.wikipedia.org/wiki/Ron_Jeremy)
+------------------------------------------------------------------
+Hi dude !
+
+Welcome to the porno-king server, this server help you to
+understand port-knocking[1] functionnality.
+
+By default this server firewall is configured to reject 
+all networks connections but port-knocking a daemon listen for
+an opening/closing sequence so if you use a port-knocking client
+like porno-king you can establish an SSH connection with it!
+
+The opening sequence is 7000 8000 9000.
+The closing sequence is 9000 8000 7000.
+
+Open SSH port with porno-king:
+$ porn knock 7000 8000 9000 <ip-porno-king-server>
+
+Have Fun!
+[1] https://en.wikipedia.org/wiki/Port_knocking
+------------------------------------------------------------------
