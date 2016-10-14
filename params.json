@@ -1,0 +1,6 @@
+{
+  "name": "Porno-king",
+  "tagline": "Port Knocking Sequence Discovery Scanner",
+  "body": "# Porno-King\r\nPort Knocking Sequence Discovery Scanner\r\n\r\n![alt text](https://github.com/mhackgyver-squad/porno-king/blob/master/static/ron-jeremy-porno-king.jpg?raw=true \"Ron Jeremy The Porno king !\")\r\n\r\n## Installation\r\n```shell\r\n$ git clone https://github.com/mhackgyver-squad/porno-king\r\n$ cd porno-king\r\n$ python setup.py install\r\n```\r\n\r\n## Usages\r\n```shell\r\n$ # Scan function help\r\n$ porn scan --help\r\n$ porn scan [PORTS]... [HOST]\r\n$ # Example for scanning localhost with sequence 11 12 13\r\n$ porn scan 11 12 13 127.0.0.1\r\n```\r\n\r\n## Credits\r\nDedicated to [Ron Jeremy](https://en.wikipedia.org/wiki/Ron_Jeremy) ! Thank you dude !\r\n\r\nAuthors: Mh@cKGyv3R\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
