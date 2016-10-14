@@ -31,7 +31,7 @@ $ porn scan 11 12 13 127.0.0.1
 ```
 
 ## Embded server
-Start the embded server and test your development on it:
+Start the embedded server and test your development on it:
 ```shell
 $ cd server
 $ docker build -t porno-king-server .
@@ -51,7 +51,7 @@ You can also use this server to play and discover port-knocking mechanism
 
 ## Features
 - Scan any host to discover hidden sequence (brute force)
-- Testing Server embded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running
+- Testing Server embedded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running
 
 ## Credits
 Dedicated to [Ron Jeremy](https://en.wikipedia.org/wiki/Ron_Jeremy) ! Thank you dude !
