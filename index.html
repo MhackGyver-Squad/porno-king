@@ -38,9 +38,20 @@
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
 
+<p>Classical installation</p>
+
 <div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/mhackgyver-squad/porno-king
 $ <span class="pl-c1">cd</span> porno-king
 $ python setup.py install</pre></div>
+
+<p>Development installation</p>
+
+<div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/mhackgyver-squad/porno-king
+$ <span class="pl-c1">cd</span> porno-king
+$ pyvenv <span class="pl-c1">.</span> <span class="pl-c"># You can also use virtualenv it's work</span>
+$ <span class="pl-c1">source</span> bin/activate
+$ python setup.py develop
+$ <span class="pl-c"># Now you can develop and use `$ porn &lt;command&gt;` directly in your shell</span></pre></div>
 
 <h2>
 <a id="usages" class="anchor" href="#usages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usages</h2>
@@ -50,6 +61,39 @@ $ porn scan --help
 $ porn scan [PORTS]... [HOST]
 $ <span class="pl-c"># Example for scanning localhost with sequence 11 12 13</span>
 $ porn scan 11 12 13 127.0.0.1</pre></div>
+
+<h2>
+<a id="embded-server" class="anchor" href="#embded-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Embded server</h2>
+
+<p>Start the embded server and test your development on it:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ <span class="pl-c1">cd</span> server
+$ docker build -t porno-king-server <span class="pl-c1">.</span>
+$ docker run --privileged porno-king-server
+$ <span class="pl-c"># get the ip address of the porno-king-server</span>
+$ docker inspect porno-king-server <span class="pl-c"># retrieve IP on command output</span>
+$ <span class="pl-c"># suppose IP is equal to 172.17.0.2</span>
+$ porn scan 7000 8000 9000 172.17.0.2</pre></div>
+
+<p>You can also use this server to play and discover port-knocking mechanism</p>
+
+<h3>
+<a id="embded-server-open-sequence" class="anchor" href="#embded-server-open-sequence" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Embded server open sequence</h3>
+
+<p>7000 8000 9000</p>
+
+<h3>
+<a id="embded-server-open-sequence-1" class="anchor" href="#embded-server-open-sequence-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Embded server open sequence</h3>
+
+<p>9000 8000 7000</p>
+
+<h2>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
+
+<ul>
+<li>Scan any host to discover hidden sequence (brute force)</li>
+<li>Testing Server embded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running</li>
+</ul>
 
 <h2>
 <a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
