@@ -46,7 +46,7 @@ You can also use this server to play and discover port-knocking mechanism
 ### Embedded server open sequence
 7000 8000 9000
 
-### Embedded server open sequence
+### Embedded server close sequence
 9000 8000 7000
 
 ## Features
