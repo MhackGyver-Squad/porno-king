@@ -30,7 +30,7 @@ $ # Example for scanning localhost with sequence 11 12 13
 $ porn scan 11 12 13 127.0.0.1
 ```
 
-## Embded server
+## Embedded server
 Start the embedded server and test your development on it:
 ```shell
 $ cd server
@@ -43,10 +43,10 @@ $ porn scan 7000 8000 9000 172.17.0.2
 ```
 You can also use this server to play and discover port-knocking mechanism
 
-### Embded server open sequence
+### Embedded server open sequence
 7000 8000 9000
 
-### Embded server open sequence
+### Embedded server open sequence
 9000 8000 7000
 
 ## Features
