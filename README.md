@@ -30,6 +30,14 @@ $ # Example for scanning localhost with sequence 11 12 13
 $ porn scan 11 12 13 127.0.0.1
 ```
 
+You can also specify protocole to use (TCP/UDP) with each ports
+Example:
+```
+porn scan 7000:tcp 8000:udp 9000:tcp 127.0.0.1
+```
+
+If protocole is not specified on port TCP are used by default.
+
 ## Embedded server
 Start the embedded server and test your development on it:
 ```shell
