@@ -3,6 +3,10 @@ Port Knocking Sequence Discovery Scanner
 
 ![alt text](https://github.com/mhackgyver-squad/porno-king/blob/master/static/ron-jeremy-porno-king.jpg?raw=true "Ron Jeremy The Porno king !")
 
+## Features
+- Scan any host to discover hidden sequence (brute force)
+- Testing Server embedded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running
+
 ## Installation
 Classical installation
 ```shell
@@ -55,11 +59,13 @@ You can also use this server to play and discover port-knocking mechanism
 7000 8000 9000
 
 ### Embedded server close sequence
-9000 8000 7000
+9000 8000 7000 
 
-## Features
-- Scan any host to discover hidden sequence (brute force)
-- Testing Server embedded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running
+## Roadmap
+- Publish porno-king on Pypi
+- Publish porno-king-server on docker hub
+- Provide a simple command knock like a traditionaly knocking client
+- Provide sequence/host storage in local sqlite database
 
 ## Credits
 Dedicated to [Ron Jeremy](https://en.wikipedia.org/wiki/Ron_Jeremy) ! Thank you dude !
