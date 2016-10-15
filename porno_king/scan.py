@@ -1,31 +1,18 @@
 # -*- coding: utf-8 -*-
-__author__ = 'TotoLeHero'
 import socket
 import time
 import sys
+from porno_king.core.knock import send_packet
+from porno_king.core.knock import port_is_open
 pause = 1
-
-
-def test_port(port, host):
-    try:
-        s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        s.settimeout(0.1)
-        s.connect((host, port))
-        s.close()
-    except socket.error as e:
-        pass
-
-
-def port_is_open(host):
-    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    return s.connect_ex((host, 22)) == 0
 
 
 def knock(ports, host):
     sequence = ' '.join(str(port) for port in ports)
     print('Testing port sequence {0}'.format(sequence))
     for port in ports:
-        test_port(port, host)
+        send_packet(port, host)
+        #test_port(port, host)
 
     time.sleep(0.5)
     if port_is_open(host):
