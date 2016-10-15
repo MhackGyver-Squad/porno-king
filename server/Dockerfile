@@ -39,16 +39,10 @@ EXPOSE 22
 # 6. Print port knocking daemon log
 #####################################
 CMD cat /etc/splash && \
-    service knockd start > /dev/null && \
-    service ssh start > /dev/null && \
+    service knockd start && \
+    service ssh stop && \
     iptables -F && \
     iptables -X && \
-    iptables -P INPUT DROP && \
-    iptables -P OUTPUT DROP && \
-    iptables -P FORWARD DROP && \
-    iptables -A INPUT -i lo -j ACCEPT && \
-    iptables -A OUTPUT -o lo -j ACCEPT && \
-    iptables -L && \
     echo "-----------------------------------" && \
     tail -f /var/log/knockd.log
 
