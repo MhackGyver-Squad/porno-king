@@ -62,6 +62,14 @@ $ porn scan [PORTS]... [HOST]
 $ <span class="pl-c"># Example for scanning localhost with sequence 11 12 13</span>
 $ porn scan 11 12 13 127.0.0.1</pre></div>
 
+<p>You can also specify protocole to use (TCP/UDP) with each ports
+Example:</p>
+
+<pre><code>porn scan 7000:tcp 8000:udp 9000:tcp 127.0.0.1
+</code></pre>
+
+<p>If protocole is not specified on port TCP are used by default.</p>
+
 <h2>
 <a id="embedded-server" class="anchor" href="#embedded-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Embedded server</h2>
 
