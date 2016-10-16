@@ -55,6 +55,7 @@ $ porn scan 7000:tcp 8000:udp 9000:tcp 127.0.0.1
 ```
 
 If protocole is not specified on port TCP are used by default.
+If port to test during a scan with the option -p is not specified port 22 (SSH) is tested by default.
 
 ## Embedded server
 Start the embedded server and test your development on it:

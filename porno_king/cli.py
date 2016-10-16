@@ -21,13 +21,14 @@ def main(args=None):
 @click.argument('ports', nargs=-1, type=str)
 @click.argument('host', nargs=1)
 @click.option('-t', '--timeout', type=float, default=0.1)
-def scan(**kwargs):
+@click.option('-p', '--port', type=int, default=22)
+def scan(timeout, port, **kwargs):
     '''Test all sequences with specified PORTS on HOST'''
     ports = kwargs['ports']
     host = kwargs['host']
     try:
         for random_ports in itertools.permutations(ports):
-            scanner.knock(random_ports, host)
+            scanner.knock(random_ports, host, port, timeout)
         sys.exit(0)
     except KeyboardInterrupt:
         print('User abort ! Bye Dude')

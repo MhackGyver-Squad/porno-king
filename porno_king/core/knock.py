@@ -31,7 +31,7 @@ def get_port_and_protocole(port):
     return int(port), PROTOCOLES[proto]
 
 
-def port_is_open(host):
+def port_is_open(host, port):
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    return s.connect_ex((host, 22)) == 0
+    return s.connect_ex((host, port)) == 0
 
