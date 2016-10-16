@@ -20,7 +20,7 @@ test_requirements = [
 
 setup(
     name='porno_king',
-    version='0.2.0',
+    version='version='0.2.0'',
     description="Port Knocking Sequence Discovery Scanner",
     long_description=readme + '\n\n' + history,
     author="Mh@cKGyv3R",
