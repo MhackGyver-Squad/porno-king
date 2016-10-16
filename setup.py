@@ -33,7 +33,8 @@ setup(
                  'porno_king'},
     entry_points={
         'console_scripts': [
-            'porn=porno_king.cli:main'
+            'porn=porno_king.cli:main',
+            'porn-king=porno_king.cli:main'
         ]
     },
     include_package_data=True,
