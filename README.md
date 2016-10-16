@@ -13,7 +13,7 @@ Full documentation are available [here](https://github.com/mhackgyver-squad/porn
 - Testing Server embedded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running.
 
 ## Current production release
-Porno-king v0.1.0
+Porno-king v0.2.1
 
 ## Installation
 Classical installation
