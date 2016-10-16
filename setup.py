@@ -20,7 +20,7 @@ test_requirements = [
 
 setup(
     name='porno_king',
-    version='0.1.0',
+    version='0.2.0',
     description="Port Knocking Sequence Discovery Scanner",
     long_description=readme + '\n\n' + history,
     author="Mh@cKGyv3R",
@@ -33,7 +33,8 @@ setup(
                  'porno_king'},
     entry_points={
         'console_scripts': [
-            'porn=porno_king.cli:main'
+            'porn=porno_king.cli:main',
+            'porn-king=porno_king.cli:main'
         ]
     },
     include_package_data=True,
