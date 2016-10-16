@@ -35,13 +35,23 @@
 
 <p><img src="https://github.com/mhackgyver-squad/porno-king/blob/master/static/ron-jeremy-porno-king.jpg?raw=true" alt="alt text" title="Ron Jeremy The Porno king !"></p>
 
+<p>Dedicated to <a href="https://en.wikipedia.org/wiki/Ron_Jeremy">Ron Jeremy</a> ! Thank you dude !</p>
+
+<p>Full documentation are available <a href="https://github.com/mhackgyver-squad/porno-king/wiki">here</a>.</p>
+
 <h2>
 <a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features</h2>
 
 <ul>
-<li>Scan any host to discover hidden sequence (brute force)</li>
-<li>Testing Server embedded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running</li>
+<li>Scan any host to discover hidden sequence (brute force).</li>
+<li>Send sequence on specified host like a simple port knocking client.</li>
+<li>Testing Server embedded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running.</li>
 </ul>
+
+<h2>
+<a id="current-production-release" class="anchor" href="#current-production-release" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Current production release</h2>
+
+<p>Porno-king v0.2.2</p>
 
 <h2>
 <a id="installation" class="anchor" href="#installation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Installation</h2>
@@ -56,13 +66,17 @@ $ python setup.py install</pre></div>
 
 <div class="highlight highlight-source-shell"><pre>$ git clone https://github.com/mhackgyver-squad/porno-king
 $ <span class="pl-c1">cd</span> porno-king
+$ git checkout origin/development
 $ pyvenv <span class="pl-c1">.</span> <span class="pl-c"># You can also use virtualenv it's work</span>
 $ <span class="pl-c1">source</span> bin/activate
+$ pip install -r requirements_dev.txt
 $ python setup.py develop
 $ <span class="pl-c"># Now you can develop and use `$ porn &lt;command&gt;` directly in your shell</span></pre></div>
 
 <h2>
 <a id="usages" class="anchor" href="#usages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usages</h2>
+
+<p>Brute force mode to discover an hidden sequence</p>
 
 <div class="highlight highlight-source-shell"><pre>$ <span class="pl-c"># Scan function help</span>
 $ porn scan --help
@@ -70,12 +84,17 @@ $ porn scan [PORTS]... [HOST]
 $ <span class="pl-c"># Example for scanning localhost with sequence 11 12 13</span>
 $ porn scan 11 12 13 127.0.0.1</pre></div>
 
+<p>Simple port knocking client mode for sending sequence</p>
+
+<div class="highlight highlight-source-shell"><pre>$ porn knock 11 12 13 127.0.0.1</pre></div>
+
 <p>You can also specify protocole to use (TCP/UDP) with each ports
 Example:</p>
 
 <div class="highlight highlight-source-shell"><pre>$ porn scan 7000:tcp 8000:udp 9000:tcp 127.0.0.1</pre></div>
 
-<p>If protocole is not specified on port TCP are used by default.</p>
+<p>If protocole is not specified on port TCP are used by default.
+If port to test during a scan with the option -p is not specified port 22 (SSH) is tested by default.</p>
 
 <h2>
 <a id="embedded-server" class="anchor" href="#embedded-server" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Embedded server</h2>
@@ -108,16 +127,13 @@ $ porn scan 7000 8000 9000 172.17.0.2</pre></div>
 <ul>
 <li>Publish porno-king on Pypi</li>
 <li>Publish porno-king-server on docker hub</li>
-<li>Provide a simple command knock like a traditionaly knocking client</li>
 <li>Provide sequence/host storage in local sqlite database</li>
 </ul>
 
 <h2>
 <a id="credits" class="anchor" href="#credits" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Credits</h2>
 
-<p>Dedicated to <a href="https://en.wikipedia.org/wiki/Ron_Jeremy">Ron Jeremy</a> ! Thank you dude !</p>
-
-<p>Authors: Mh@cKGyv3R</p>
+<p>Authors: <a href="https://mhackgyver-squad.github.io/mhackgyver/">Mh@cKGyv3R</a></p>
         </section>
 
         <aside id="sidebar">
