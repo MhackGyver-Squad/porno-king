@@ -93,5 +93,8 @@ You can also use this server to play and discover port-knocking mechanism
 - Publish porno-king-server on docker hub
 - Provide sequence/host storage in local sqlite database
 
+## Dependances
+- [clic](http://click.pocoo.org/6/)
+
 ## Credits
 Authors: [Mh@cKGyv3R](https://mhackgyver-squad.github.io/mhackgyver/)
