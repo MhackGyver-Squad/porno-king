@@ -1,5 +1,5 @@
 # Porno-King
-Port Knocking Sequence Discovery Scanner
+Port Knocking Security Utilities
 
 ![alt text](https://github.com/mhackgyver-squad/porno-king/blob/master/static/ron-jeremy-porno-king.jpg?raw=true "Ron Jeremy The Porno king !")
 
@@ -16,6 +16,10 @@ Full documentation are available [here](https://github.com/mhackgyver-squad/porn
 Porno-king v0.2.2
 
 ## Installation
+### From pypi
+```shell
+$ pip install porno-king
+```
 Classical installation
 ```shell
 $ git clone https://github.com/mhackgyver-squad/porno-king
@@ -59,7 +63,14 @@ If protocole is not specified on port TCP are used by default.
 If port to test during a scan with the option -p is not specified port 22 (SSH) is tested by default.
 
 ## Embedded server
-Start the embedded server and test your development on it:
+Use the embedded server for test your development on it.
+
+Start from docker hub
+```shell
+$ docker pull 4383/porno-king
+```
+
+Start from local Dockerfile
 ```shell
 $ cd server
 $ docker build -t porno-king-server .

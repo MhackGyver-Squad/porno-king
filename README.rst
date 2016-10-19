@@ -1,40 +1,34 @@
 ===============================
-porno-king
+Porno-King
 ===============================
-
-
-.. image:: https://img.shields.io/pypi/v/porno_king.svg
-        :target: https://pypi.python.org/pypi/porno_king
-
-.. image:: https://img.shields.io/travis/mhackgyver-squad/porno_king.svg
-        :target: https://travis-ci.org/mhackgyver-squad/porno_king
-
-.. image:: https://readthedocs.org/projects/porno-king/badge/?version=latest
-        :target: https://porno-king.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
 
 .. image:: https://pyup.io/repos/github/mhackgyver-squad/porno_king/shield.svg
      :target: https://pyup.io/repos/github/mhackgyver-squad/porno_king/
      :alt: Updates
 
 
-Port Knocking Sequence Discovery Scanner
+Port Knocking Security Utilities
 
 
 * Free software: GNU General Public License v3
-* Documentation: https://porno-king.readthedocs.io.
+* Documentation: https://github.com/mhackgyver-squad/porno-king/wiki
 
 
 Features
 --------
 
-* TODO
+* Scan any host to discover hidden sequence (brute force).
+* Send sequence on specified host like a simple port knocking client.
+* Testing Server embedded (docker image) included: firewall reject all connections, ssh server running, port knocking daemon running.
+
+Installation
+------------
+.. code::shell
+$ pip install porno-king
 
 Credits
----------
+-------
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+Authors: Mhackgyver_.
 
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
-
+.. _Mhackgyver_: https://mhackgyver-squad.github.io/mhackgyver/
