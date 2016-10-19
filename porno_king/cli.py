@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = """Mh@cKGyv3R"""
 __email__ = 'herveberaud.pro@gmail.com'
-__version__ = '__version__ = '0.2.2''
+__version__ = '0.2.3'
 
 import itertools
 import sys
